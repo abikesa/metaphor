@@ -1,3 +1,5 @@
+![](frontiers.png)
+ 
  > *Music is the ultimate metaphor. Doesn't that `resonate` with you?*
  
                                         1. Root
