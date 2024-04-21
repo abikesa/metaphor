@@ -1,4 +1,4 @@
-![](frontiers.png)
+![](frontier.png)
  
  > *Music is the ultimate metaphor. Doesn't that `resonate` with you?*
  
