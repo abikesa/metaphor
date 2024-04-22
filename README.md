@@ -14,15 +14,15 @@
 
 ### God/Frontiers/Malum
 ##### (Foundation/Stage: 1st, 3rd, 5th, 7th, 9th)
-1. Root
+1. Root/Ecclessiastical 
 2. Pentatonic
 ### Art/Bustle/Se
 ##### (Extensions/Cast: 11th, 13th)
-3. Diatonic
+3. Diatonic/Mundane
 4. Chromatic
 ### Man/Order/Prohibitum
 ##### (Alterations/Meaning: ♭♭7,♭9,♯9,♯11,♭13) 
-5. Temperament
+5. Temperament/Heretical
 6. Expression
 
 # Creativity
