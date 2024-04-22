@@ -34,7 +34,7 @@ In this metaphor, human life and its creations (like music) can be seen as attem
 
 This idea elevates the role of human creativity and emotion, suggesting that while nature provides the stage, it is human expression that fills it with meaning. It's a powerful assertion of the importance of culture, art, and personal expression as tools to navigate and illuminate the fundamental "static" of existence.
 
-Do you see this interpretation as a way to highlight the transformative power of human creativity, or is there a different nuance you're aiming to explore through this metaphor? (Most Coen Brothers films have a perplexed character who asks "What does this all mean?"
+Do you see this interpretation as a way to highlight the transformative power of human creativity, or is there a different nuance you're aiming to explore through this metaphor? (Most Coen Brothers films have a perplexed character who asks "What does this all mean?" In Black Gospel its "holding it down", just as the rug, hat, guitar, etc..)
 
 
 # Human
