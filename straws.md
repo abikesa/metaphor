@@ -1,11 +1,15 @@
-- Dude: rug
-- Tom: hat
+- Dude: Rug
+- Tom: Hat
 - Llewyln Davis: Guitar
 - Llewyln Mozz: Case
 - Barton Fink: Typewriter
    - John Goodman: Peace of Mind (aka Insurance)
 - True Grit
-   - Revenge (more savory than Tarantino's Freudian kind) 
+   - Revenge (more savory than Tarantino's Freudian kind)
+- Titanic: Raft
+- Letters of transit: Casablanca
+- Towering inferno: Helicopter, Breeches buoy
+- Citizen Cane: Rosebud
 
 # GPT-4
 
