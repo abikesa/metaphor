@@ -1,0 +1,7 @@
+- Dude: rug
+- Tom: hat
+- Llewyln Davis: Guitar
+- Llewyln Mozz: Case
+- Barton Fink: Typewriter
+   - John Goodman: Peace of Mind (aka Insurance)
+- Etc.  
