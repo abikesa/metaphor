@@ -1,0 +1,660 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Deployment &#8212; Communication</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/book-stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-167881009-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-167881009-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'part2/chapter2';</script>
+    <script src="../_static/script.js"></script>
+    <link rel="canonical" href="https://book.the-turing-way.org/part2/chapter2.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Iteration" href="chapter3.html" />
+    <link rel="prev" title="WebApp" href="chapter1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><a href='https://www.gutenberg.org/files/174/174-h/174-h.htm'>Aesthetics vs. Morality</a></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://s.yimg.com/ny/api/res/1.2/yJSXgXR.2vFLg6spo5jqUw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTcyMA--/https://media.zenfs.com/en/business_insider_articles_888/231d9d6b07f98969ddf387f38fa43e4f" class="logo__image only-light" alt="Communication - Home"/>
+    <script>document.write(`<img src="https://s.yimg.com/ny/api/res/1.2/yJSXgXR.2vFLg6spo5jqUw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTcyMA--/https://media.zenfs.com/en/business_insider_articles_888/231d9d6b07f98969ddf387f38fa43e4f" class="logo__image only-dark" alt="Communication - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Metaphor
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="part2.html">Part 2: Sing O Muse</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chapter1.html">WebApp</a></li>
+
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">Iteration</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part3/part3.html">Part 3: Apollo</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../part3/act1.html">Aim 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part1/part1_1.html">3.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part1/part1_2.html">3.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part1/part1_3.html">3.3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../part3/act2.html">Aim 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part2/part2_1.html">4.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part2/part2_2.html">4.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part2/part2_3.html">4.3</a></li>
+
+
+
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../part3/act3.html">Aim 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part3/part3_1.html">5.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part3/part3_2.html">5.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part3/part3_3.html">4.3</a></li>
+
+
+
+
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/edit/main/book/website/part2/chapter2.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/the-turing-way/the-turing-way/issues/new?title=Issue%20on%20page%20%2Fpart2/chapter2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/part2/chapter2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Deployment</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nassim-taleb-s-critique-of-the-black-scholes-merton-bsm-model">Nassim Taleb’s Critique of the Black-Scholes-Merton (BSM) Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Nassim Taleb’s Critique of the Black-Scholes-Merton (BSM) Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renaissance-technologies-and-jim-simons-tax-issues">Renaissance Technologies and Jim Simons’ Tax Issues</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-up-gpt-4o">Step-up GPT-4o!</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jim-simons-and-renaissance-technologies-tax-controversy">Jim Simons and Renaissance Technologies’ Tax Controversy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connection-to-point-6-from-taleb-s-critique">Connection to Point #6 from Taleb’s Critique</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="deployment">
+<span id="fw-aim2"></span><h1>Deployment<a class="headerlink" href="#deployment" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="../part3/part3.html#rr"><span class="std std-ref">Part 3: Apollo</span></a></p></li>
+<li><p><span class="xref std std-ref">pd</span></p></li>
+<li><p><span class="xref std std-ref">cm</span></p></li>
+<li><p><span class="xref std std-ref">cl</span></p></li>
+<li><p><span class="xref std std-ref">er</span></p></li>
+</ul>
+<figure class="align-default" id="theturingway-chapters">
+<img alt="_The Turing Way_ Guide to reproducible research and its structure illustrated to show a set of doors to represent how it's built on chapters and sub-chapters of the different areas of the guide" src="https://storage.googleapis.com/campaign-identity/original_images/Jim-Simons-at-MSRI-by-David-Eisenbud.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text"><em>The Turing Way</em> project illustration by Scriberia. Original version on Zenodo. <a class="reference external" href="http://doi.org/10.5281/zenodo.3695300">http://doi.org/10.5281/zenodo.3695300</a>.</span><a class="headerlink" href="#theturingway-chapters" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="nassim-taleb-s-critique-of-the-black-scholes-merton-bsm-model">
+<h2>Nassim Taleb’s Critique of the Black-Scholes-Merton (BSM) Model<a class="headerlink" href="#nassim-taleb-s-critique-of-the-black-scholes-merton-bsm-model" title="Permalink to this heading">#</a></h2>
+<p>Here are the points formatted in Markdown:</p>
+</section>
+<section id="id1">
+<h2>Nassim Taleb’s Critique of the Black-Scholes-Merton (BSM) Model<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Assumption of Normal Distribution</strong>: Taleb argues that the BSM model’s reliance on the normal distribution for asset returns is fundamentally flawed. He believes that real financial markets exhibit “fat tails” and “black swan” events, which are extreme outliers that occur more frequently than the normal distribution would predict. These extreme events can have a disproportionate impact on markets and risk calculations.</p></li>
+<li><p><strong>Static Volatility Assumption</strong>: The BSM model assumes constant volatility over the life of the option. Taleb criticizes this assumption, pointing out that market volatility is dynamic and can change rapidly, especially during periods of market stress.</p></li>
+<li><p><strong>Misestimation of Risk</strong>: Taleb argues that the BSM model underestimates the risk of extreme market movements. By relying on the normal distribution and constant volatility, the model provides a false sense of security about the likelihood and impact of rare, high-magnitude events.</p></li>
+<li><p><strong>Overreliance on Historical Data</strong>: Taleb emphasizes that the BSM model heavily depends on historical data to estimate future risks. He argues that this approach is dangerous because it assumes that future market behavior will mirror past patterns, ignoring the potential for unprecedented events.</p></li>
+<li><p><strong>Use of Hedging Strategies</strong>: The BSM model is often used to justify dynamic hedging strategies. Taleb criticizes this practice, arguing that in times of market turmoil, the assumptions underlying dynamic hedging break down, leading to significant losses.</p></li>
+<li><p><strong>Neglect of Real-World Market Conditions</strong>: Taleb points out that the BSM model assumes frictionless markets with no transaction costs, taxes, or liquidity constraints. In reality, these factors can significantly impact the pricing and hedging of options.</p></li>
+<li><p><strong>Philosophical Critique</strong>: Beyond technical criticisms, Taleb’s broader philosophical critique is that models like BSM contribute to a false sense of predictability and control in financial markets. He believes that such models can lead to complacency and risk-taking based on flawed assumptions.</p></li>
+</ol>
+<p>In summary, Taleb’s critique of the Black-Scholes-Merton model is that it oversimplifies market behavior, underestimates the probability and impact of extreme events, and creates a misleading perception of risk management. He advocates for a more robust approach that takes into account the complexity and unpredictability of financial markets.</p>
+</section>
+<section id="renaissance-technologies-and-jim-simons-tax-issues">
+<h2>Renaissance Technologies and Jim Simons’ Tax Issues<a class="headerlink" href="#renaissance-technologies-and-jim-simons-tax-issues" title="Permalink to this heading">#</a></h2>
+<p>According to The Wall Street Journal in May 2009, Simons was questioned by investors on the dramatic performance gap of Renaissance Technologies’ portfolios. The Medallion Fund, which has been available exclusively to current and past employees and their families, surged 80% in 2008 in spite of hefty fees; the Renaissance Institutional Equities Fund (RIEF), owned by outsiders, lost money in both 2008 and 2009; RIEF declined 16% in 2008.</p>
+<p>On July 22, 2014, Simons was subject to bipartisan condemnation by the U.S. Senate Permanent Subcommittee on Investigations for the use of complex basket options to shield day-to-day trading (usually subject to higher ordinary income tax rates) as long-term capital gains. “Renaissance Technologies was able to avoid paying more than $6 billion in taxes by disguising its day-to-day stock trades as long term investments,” said Sen. John McCain (R., Ariz.), the committee’s ranking Republican, in his opening statement.</p>
+<p>An article published in The New York Times in 2015 said that Simons was involved in one of the biggest tax battles of the year, with Renaissance Technologies being “under review by the IRS over a loophole that saved their fund an estimated $6.8 billion in taxes over roughly a decade.” In September 2021, it was announced that Simons and his colleagues would pay billions of dollars in back taxes, interest and penalties to resolve the dispute, one of the biggest in IRS history.</p>
+<p>Let’s focus on point #6 from Taleb’s critique. The Black-Scholes-Merton model assumes frictionless markets, meaning no transaction costs, taxes, or liquidity constraints. This assumption is clearly unrealistic and disregards the real-world conditions traders face. In reality, transaction costs and taxes can significantly affect the profitability of trades. Liquidity constraints can lead to difficulties in executing trades, especially during market turmoil when liquidity tends to dry up. Taleb’s critique highlights that by ignoring these factors, the BSM model can provide a misleading sense of security about the viability of hedging strategies and risk management practices. This oversight can lead to substantial financial losses when market conditions deviate from the model’s idealized assumptions.</p>
+<div class="admonition-reminder admonition">
+<p class="admonition-title">Reminder</p>
+<p><em>Nassim Twaleb</em> is as prophetic as Nietzsche</p>
+</div>
+</section>
+<section id="step-up-gpt-4o">
+<h2>Step-up GPT-4o!<a class="headerlink" href="#step-up-gpt-4o" title="Permalink to this heading">#</a></h2>
+<p>I understand your need for a more thorough and insightful analysis. Let’s delve into the details of the Jim Simons issue and explore any connections to point #6 of Taleb’s critique of the Black-Scholes-Merton model.</p>
+<section id="jim-simons-and-renaissance-technologies-tax-controversy">
+<h3>Jim Simons and Renaissance Technologies’ Tax Controversy<a class="headerlink" href="#jim-simons-and-renaissance-technologies-tax-controversy" title="Permalink to this heading">#</a></h3>
+<p><strong>The Issue:</strong></p>
+<ul class="simple">
+<li><p><strong>Performance Disparity</strong>: In 2008, Renaissance Technologies’ Medallion Fund, which is restricted to current and past employees and their families, achieved an 80% return despite substantial fees. Meanwhile, the Renaissance Institutional Equities Fund (RIEF), open to external investors, posted a 16% loss in 2008 and continued to lose money in 2009. This significant performance gap raised questions among investors.</p></li>
+<li><p><strong>Tax Avoidance Strategies</strong>: On July 22, 2014, Jim Simons and Renaissance Technologies faced bipartisan condemnation from the U.S. Senate Permanent Subcommittee on Investigations. The committee criticized the use of complex financial instruments known as “basket options” to reclassify short-term trading profits, which are typically subject to higher ordinary income tax rates, as long-term capital gains, which are taxed at lower rates. This strategy reportedly allowed Renaissance Technologies to avoid paying over $6 billion in taxes.</p></li>
+<li><p><strong>IRS Review and Settlement</strong>: The IRS began investigating this tax avoidance strategy, estimating that it saved Renaissance Technologies approximately $6.8 billion over a decade. In September 2021, Simons and his colleagues agreed to pay billions of dollars in back taxes, interest, and penalties to resolve the dispute, marking one of the largest settlements in IRS history.</p></li>
+</ul>
+</section>
+<section id="connection-to-point-6-from-taleb-s-critique">
+<h3>Connection to Point #6 from Taleb’s Critique<a class="headerlink" href="#connection-to-point-6-from-taleb-s-critique" title="Permalink to this heading">#</a></h3>
+<p><strong>Point #6 of Taleb’s Critique</strong>: Taleb criticizes the Black-Scholes-Merton (BSM) model for neglecting real-world market conditions, such as transaction costs, taxes, and liquidity constraints. The model assumes frictionless markets, which is unrealistic and can lead to flawed risk management and trading strategies.</p>
+<p><strong>Relationship and Insights</strong>:</p>
+<ul class="simple">
+<li><p><strong>Transaction Costs and Taxes</strong>: The tax avoidance strategies employed by Renaissance Technologies highlight a critical aspect of Taleb’s critique. The BSM model does not account for the impact of taxes on trading profits. Renaissance Technologies’ use of basket options to convert short-term gains into long-term capital gains underscores how tax considerations can significantly influence trading strategies and profitability. This real-world complexity is precisely what the BSM model fails to capture, as it assumes a simplified environment without such frictions.</p></li>
+<li><p><strong>Market Frictions and Real-World Practices</strong>: Taleb’s critique is that financial models, including BSM, often ignore practical constraints and regulatory environments. Renaissance Technologies’ ability to exploit tax loopholes demonstrates how real-world market participants must navigate and optimize within these constraints. The disparity in performance between the Medallion Fund and RIEF also reflects how different investment structures and regulatory exposures can impact outcomes, a nuance that simple financial models overlook.</p></li>
+<li><p><strong>Dynamic and Complex Market Conditions</strong>: The controversy around Renaissance Technologies also touches on the dynamic nature of financial markets. Just as Taleb argues that volatility is not static and markets are unpredictable, the tax strategies employed by Renaissance Technologies illustrate the lengths to which market participants go to manage and mitigate risks, including regulatory and tax risks. These dynamic adjustments are far removed from the static assumptions of the BSM model.</p></li>
+</ul>
+<p>In summary, the Jim Simons issue with Renaissance Technologies’ tax strategies directly ties into Taleb’s critique of the Black-Scholes-Merton model. It exemplifies the real-world complexities and frictions—such as transaction costs, tax implications, and regulatory constraints—that the BSM model fails to consider. Taleb’s broader point is that models which ignore these factors provide an incomplete and potentially dangerous view of risk management, as real-world market conditions are far more intricate and variable than theoretical models suggest.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./part2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">WebApp</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Iteration</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nassim-taleb-s-critique-of-the-black-scholes-merton-bsm-model">Nassim Taleb’s Critique of the Black-Scholes-Merton (BSM) Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Nassim Taleb’s Critique of the Black-Scholes-Merton (BSM) Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renaissance-technologies-and-jim-simons-tax-issues">Renaissance Technologies and Jim Simons’ Tax Issues</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-up-gpt-4o">Step-up GPT-4o!</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jim-simons-and-renaissance-technologies-tax-controversy">Jim Simons and Renaissance Technologies’ Tax Controversy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connection-to-point-6-from-taleb-s-critique">Connection to Point #6 from Taleb’s Critique</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dionysus
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Artist is the creator of beautiful things
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
