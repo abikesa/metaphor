@@ -1,5 +1,8 @@
 # Part 1: Dionysus
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-vlHn8n1svk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> _(see {ref}`fw-aim2`)_
 
 That's an insightful analogy! The collective unconscious as analogous to latent space suggests that just as `latent space` in machine learning models represents compressed, abstracted representations of data, the collective unconscious contains compressed, abstracted representations of shared human experiences and archetypes. This space holds potential patterns and insights that can be "decoded" or "activated" to generate new understandings and applications.
 
