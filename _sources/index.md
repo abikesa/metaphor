@@ -1,10 +1,10 @@
-# Metaphor
+# Part 1: Dionysus
 
- 1. Millenia-of-Experiences
-                           \
-        2. Our-Heritage -> 4. Collective-Unconscious -> 5. Decode-Priests -> 6. Apply-Thrive
-                           /
-                           3. Artifacts-Rituals 
+    1. Millenia-of-Experiences
+                              \
+           2. Our-Heritage -> 4. Collective-Unconscious -> 5. Decode-Priests -> 6. Apply-Thrive
+                              /
+                              3. Artifacts-Rituals 
 
 ### Dionysus 1, 2, 3
 ### Sing O Muse 4
