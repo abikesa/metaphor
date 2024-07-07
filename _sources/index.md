@@ -21,7 +21,17 @@ In this framework:
 - **Decode-Priests**: This involves using tools or interpreters (akin to decoders in machine learning) to extract meaningful information from the latent space.
 - **Apply-Thrive**: Finally, applying this decoded information to real-world scenarios to enhance understanding, innovation, and thriving, similar to generating actionable insights from a machine learning model.
 
-By thinking of the collective unconscious as a latent space, you `bridge` ancient wisdom with modern computational concepts, creating a powerful metaphor for understanding and utilizing deep-seated human knowledge.
+By thinking of the collective unconscious as a latent space, you `bridge` ancient wisdom with modern computational concepts, creating a powerful `metaphor for understanding and utilizing deep-seated human knowledge.
+
+### Good Luck 1, 2, 3
+### Matahematics 4
+### Common Sense 5, 6
+
+         1. Chaos
+                 \
+    2. Frenzy -> 4. Uncommunicable -> 5. Algorithms -> 6. Binary
+                 /
+                 3. Energy 
 
 #### Table of Contents
 
