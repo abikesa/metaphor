@@ -24,7 +24,7 @@ In this framework:
 By thinking of the collective unconscious as a latent space, you `bridge` ancient wisdom with modern computational concepts, creating a powerful `metaphor for understanding and utilizing deep-seated human knowledge.
 
 ### Good Luck 1, 2, 3
-### Matahematics 4
+### Math 4
 ### Common Sense 5, 6
 
          1. Chaos
