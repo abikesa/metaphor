@@ -1,76 +1,83 @@
 (fw-aim2)=
 # Deployment
 
+The simultaneous emergence of films like "Lost in Translation" and "Kill Bill," both featuring significant Japanese settings or influences, can be seen as a symptom rather than a coincidence, reflecting Japan's cultural peak in the 90s and early 2000s. Here are a few reasons why this happened:
 
-* {ref}`rr`
-* {ref}`pd`
-* {ref}`cm`
-* {ref}`cl`
-* {ref}`er`
+### Japan's Cultural Influence in the 90s
+1. **Economic Boom and Cultural Export**:
+   - Japan experienced a significant economic boom in the 80s and early 90s, becoming a global economic powerhouse. This economic success translated into increased cultural exports, including anime, video games, fashion, and cuisine, which began to captivate Western audiences.
 
-```{figure} https://storage.googleapis.com/campaign-identity/original_images/Jim-Simons-at-MSRI-by-David-Eisenbud.jpg
----
-name: theturingway-chapters
-alt: _The Turing Way_ Guide to reproducible research and its structure illustrated to show a set of doors to represent how it's built on chapters and sub-chapters of the different areas of the guide
----
-_The Turing Way_ project illustration by Scriberia. Original version on Zenodo. http://doi.org/10.5281/zenodo.3695300.
-```
+2. **Technological Leadership**:
+   - Japan's technological advancements, particularly in electronics and entertainment, positioned it as a trendsetter. Products from companies like Sony, Nintendo, and Sega became household names, further embedding Japanese culture into everyday life worldwide.
 
-## Nassim Taleb's Critique of the Black-Scholes-Merton (BSM) Model
+3. **Anime and Manga**:
+   - The global spread of anime and manga in the 90s introduced Western audiences to Japanese aesthetics, narratives, and cultural nuances. Series like "Dragon Ball," "Sailor Moon," and "Neon Genesis Evangelion" played a significant role in this cultural diffusion.
 
-Here are the points formatted in Markdown:
+### Cinematic Reflection of Cultural Fascination
+1. **Hollywood's Interest in Exotic Locales**:
+   - The fascination with Japanese culture led filmmakers to set their stories in Japan or incorporate Japanese elements, providing Western audiences with a sense of exoticism and novelty.
 
-## Nassim Taleb's Critique of the Black-Scholes-Merton (BSM) Model
+2. **Personal Connections of Filmmakers**:
+   - Sofia Coppola and Quentin Tarantino both had personal and professional interests in Japan. Coppola's portrayal of Tokyo in "Lost in Translation" reflects a deep appreciation and nuanced understanding of the city's ambiance. Tarantino's "Kill Bill" pays homage to Japanese samurai and martial arts films, showcasing his love for Japanese cinema.
 
-1. **Assumption of Normal Distribution**: Taleb argues that the BSM model's reliance on the normal distribution for asset returns is fundamentally flawed. He believes that real financial markets exhibit "fat tails" and "black swan" events, which are extreme outliers that occur more frequently than the normal distribution would predict. These extreme events can have a disproportionate impact on markets and risk calculations.
+3. **Themes of Displacement and Globalization**:
+   - Both films explore themes of cultural displacement and the impact of globalization. "Lost in Translation" delves into the alienation felt by foreigners in Tokyo, while "Kill Bill" incorporates cross-cultural elements, blending Western and Eastern cinematic traditions.
 
-2. **Static Volatility Assumption**: The BSM model assumes constant volatility over the life of the option. Taleb criticizes this assumption, pointing out that market volatility is dynamic and can change rapidly, especially during periods of market stress.
+### Japan's Continuing Cultural Resonance
+Even after its economic peak, Japan's cultural influence remains significant. The country's unique blend of tradition and modernity continues to captivate the world, and this enduring allure is reflected in various art forms, including film.
 
-3. **Misestimation of Risk**: Taleb argues that the BSM model underestimates the risk of extreme market movements. By relying on the normal distribution and constant volatility, the model provides a false sense of security about the likelihood and impact of rare, high-magnitude events.
+In conclusion, the prominence of Japanese settings and influences in early 2000s films like "Lost in Translation" and "Kill Bill" is a symptom of Japan's cultural zenith in the 90s. This period saw an unprecedented global fascination with Japanese culture, which filmmakers adeptly incorporated into their works, resulting in some of the most memorable and culturally resonant films of the time.
 
-4. **Overreliance on Historical Data**: Taleb emphasizes that the BSM model heavily depends on historical data to estimate future risks. He argues that this approach is dangerous because it assumes that future market behavior will mirror past patterns, ignoring the potential for unprecedented events.
+The early 2000s saw a notable influx of films that featured Japanese settings, themes, or cultural elements, further highlighting Japan's cultural impact during and after its economic peak in the 90s. Here are some additional films that contribute to the pattern:
 
-5. **Use of Hedging Strategies**: The BSM model is often used to justify dynamic hedging strategies. Taleb criticizes this practice, arguing that in times of market turmoil, the assumptions underlying dynamic hedging break down, leading to significant losses.
+### The Last Samurai (2003)
+- **Setting**: Late 19th century Japan.
+- **Synopsis**: This film, starring Tom Cruise, explores the clash between traditional Japanese samurai culture and the encroaching influence of Western modernization. It highlights themes of honor, loyalty, and cultural transition.
+- **Cultural Impact**: "The Last Samurai" brought Japanese history and culture to a wide Western audience, emphasizing the allure of samurai ethics and aesthetics.
 
-6. **Neglect of Real-World Market Conditions**: Taleb points out that the BSM model assumes frictionless markets with no transaction costs, taxes, or liquidity constraints. In reality, these factors can significantly impact the pricing and hedging of options.
+### Memoirs of a Geisha (2005)
+- **Setting**: Early to mid-20th century Japan.
+- **Synopsis**: Based on Arthur Golden's novel, the film follows the life of a young girl who becomes one of Japan's most celebrated geishas. It delves into the intricacies of geisha culture and the historical backdrop of Japan.
+- **Cultural Impact**: The film provided a detailed and visually stunning portrayal of traditional Japanese customs, fashion, and social dynamics, captivating global audiences.
 
-7. **Philosophical Critique**: Beyond technical criticisms, Taleb's broader philosophical critique is that models like BSM contribute to a false sense of predictability and control in financial markets. He believes that such models can lead to complacency and risk-taking based on flawed assumptions.
+### The Grudge (2004)
+- **Setting**: Contemporary Japan.
+- **Synopsis**: A horror film and an adaptation of the Japanese film "Ju-on," it follows the story of an American nurse living and working in Tokyo who encounters a supernatural curse.
+- **Cultural Impact**: This film, along with others like "The Ring" (2002), played a significant role in popularizing J-horror in the West, showcasing unique Japanese horror elements and storytelling styles.
 
-In summary, Taleb's critique of the Black-Scholes-Merton model is that it oversimplifies market behavior, underestimates the probability and impact of extreme events, and creates a misleading perception of risk management. He advocates for a more robust approach that takes into account the complexity and unpredictability of financial markets.
+### Spirited Away (2001)
+- **Setting**: Fantasy world inspired by Japanese folklore.
+- **Synopsis**: Directed by Hayao Miyazaki, this animated film follows a young girl who becomes trapped in a mystical and fantastical world and must navigate various challenges to return to her own world.
+- **Cultural Impact**: "Spirited Away" received global acclaim and won the Academy Award for Best Animated Feature, highlighting the creative prowess of Japanese animation and its ability to convey profound cultural narratives.
 
-## Renaissance Technologies and Jim Simons' Tax Issues
+### Kill Bill: Volume 1 (2003) and Volume 2 (2004)
+- **Setting**: Various locations, including Japan.
+- **Synopsis**: These films, directed by Quentin Tarantino, feature significant Japanese elements, including samurai swords, martial arts, and homage to Japanese cinema.
+- **Cultural Impact**: Tarantino's work celebrated and introduced Japanese film genres, such as chanbara (samurai cinema) and yakuza films, to a broader audience.
 
-According to The Wall Street Journal in May 2009, Simons was questioned by investors on the dramatic performance gap of Renaissance Technologies' portfolios. The Medallion Fund, which has been available exclusively to current and past employees and their families, surged 80% in 2008 in spite of hefty fees; the Renaissance Institutional Equities Fund (RIEF), owned by outsiders, lost money in both 2008 and 2009; RIEF declined 16% in 2008.
+### Lost in Translation (2003)
+- **Setting**: Contemporary Tokyo, Japan.
+- **Synopsis**: A drama-comedy that explores the experiences of two Americans in Tokyo, dealing with themes of alienation and cultural dislocation.
+- **Cultural Impact**: It offered a unique, intimate look at modern Tokyo, contributing to the Western fascination with Japanese urban culture and lifestyle.
 
-On July 22, 2014, Simons was subject to bipartisan condemnation by the U.S. Senate Permanent Subcommittee on Investigations for the use of complex basket options to shield day-to-day trading (usually subject to higher ordinary income tax rates) as long-term capital gains. "Renaissance Technologies was able to avoid paying more than $6 billion in taxes by disguising its day-to-day stock trades as long term investments," said Sen. John McCain (R., Ariz.), the committee's ranking Republican, in his opening statement.
+### The Ring (2002)
+- **Setting**: Contemporary Japan (adapted to American settings in the remake).
+- **Synopsis**: A horror film based on the Japanese movie "Ringu," it follows the story of a cursed videotape that kills its viewers seven days after watching.
+- **Cultural Impact**: "The Ring" played a crucial role in bringing Japanese horror (J-horror) to the Western mainstream, leading to a wave of interest in Japanese horror films and remakes.
 
-An article published in The New York Times in 2015 said that Simons was involved in one of the biggest tax battles of the year, with Renaissance Technologies being "under review by the IRS over a loophole that saved their fund an estimated $6.8 billion in taxes over roughly a decade." In September 2021, it was announced that Simons and his colleagues would pay billions of dollars in back taxes, interest and penalties to resolve the dispute, one of the biggest in IRS history.
+### Babel (2006)
+- **Setting**: Various global locations, including Japan.
+- **Synopsis**: This multi-narrative film directed by Alejandro González Iñárritu includes a storyline set in Japan, focusing on a deaf-mute Japanese girl navigating her life in Tokyo.
+- **Cultural Impact**: The film highlights global interconnectedness and includes a poignant depiction of Japanese urban life, blending it with other international narratives.
 
+### Resident Evil (2002)
+- **Setting**: Global settings with significant Japanese influences.
+- **Synopsis**: Based on the Japanese video game series, the film follows a group battling a viral outbreak and the resulting zombie apocalypse.
+- **Cultural Impact**: The success of this adaptation emphasized the global reach and influence of Japanese video game culture.
 
-Let's focus on point #6 from Taleb's critique. The Black-Scholes-Merton model assumes frictionless markets, meaning no transaction costs, taxes, or liquidity constraints. This assumption is clearly unrealistic and disregards the real-world conditions traders face. In reality, transaction costs and taxes can significantly affect the profitability of trades. Liquidity constraints can lead to difficulties in executing trades, especially during market turmoil when liquidity tends to dry up. Taleb's critique highlights that by ignoring these factors, the BSM model can provide a misleading sense of security about the viability of hedging strategies and risk management practices. This oversight can lead to substantial financial losses when market conditions deviate from the model's idealized assumptions.
+### Final Fantasy: The Spirits Within (2001)
+- **Setting**: Futuristic and fantastical settings inspired by Japanese aesthetics.
+- **Synopsis**: Based on the popular Japanese video game franchise, this film integrates advanced animation techniques to tell a science fiction story.
+- **Cultural Impact**: It showcased the technical and creative advancements of Japanese animation studios, contributing to the global recognition of Japanese digital art.
 
-```{admonition} Reminder
-_Nassim Twaleb_ is as prophetic as Nietzsche
-```
-
-## Step-up GPT-4o!
-
-I understand your need for a more thorough and insightful analysis. Let's delve into the details of the Jim Simons issue and explore any connections to point #6 of Taleb's critique of the Black-Scholes-Merton model.
-
-### Jim Simons and Renaissance Technologies' Tax Controversy
-
-**The Issue:**
-- **Performance Disparity**: In 2008, Renaissance Technologies' Medallion Fund, which is restricted to current and past employees and their families, achieved an 80% return despite substantial fees. Meanwhile, the Renaissance Institutional Equities Fund (RIEF), open to external investors, posted a 16% loss in 2008 and continued to lose money in 2009. This significant performance gap raised questions among investors.
-- **Tax Avoidance Strategies**: On July 22, 2014, Jim Simons and Renaissance Technologies faced bipartisan condemnation from the U.S. Senate Permanent Subcommittee on Investigations. The committee criticized the use of complex financial instruments known as "basket options" to reclassify short-term trading profits, which are typically subject to higher ordinary income tax rates, as long-term capital gains, which are taxed at lower rates. This strategy reportedly allowed Renaissance Technologies to avoid paying over $6 billion in taxes.
-- **IRS Review and Settlement**: The IRS began investigating this tax avoidance strategy, estimating that it saved Renaissance Technologies approximately $6.8 billion over a decade. In September 2021, Simons and his colleagues agreed to pay billions of dollars in back taxes, interest, and penalties to resolve the dispute, marking one of the largest settlements in IRS history.
-
-### Connection to Point #6 from Taleb's Critique
-
-**Point #6 of Taleb's Critique**: Taleb criticizes the Black-Scholes-Merton (BSM) model for neglecting real-world market conditions, such as transaction costs, taxes, and liquidity constraints. The model assumes frictionless markets, which is unrealistic and can lead to flawed risk management and trading strategies.
-
-**Relationship and Insights**:
-- **Transaction Costs and Taxes**: The tax avoidance strategies employed by Renaissance Technologies highlight a critical aspect of Taleb's critique. The BSM model does not account for the impact of taxes on trading profits. Renaissance Technologies' use of basket options to convert short-term gains into long-term capital gains underscores how tax considerations can significantly influence trading strategies and profitability. This real-world complexity is precisely what the BSM model fails to capture, as it assumes a simplified environment without such frictions.
-- **Market Frictions and Real-World Practices**: Taleb's critique is that financial models, including BSM, often ignore practical constraints and regulatory environments. Renaissance Technologies' ability to exploit tax loopholes demonstrates how real-world market participants must navigate and optimize within these constraints. The disparity in performance between the Medallion Fund and RIEF also reflects how different investment structures and regulatory exposures can impact outcomes, a nuance that simple financial models overlook.
-- **Dynamic and Complex Market Conditions**: The controversy around Renaissance Technologies also touches on the dynamic nature of financial markets. Just as Taleb argues that volatility is not static and markets are unpredictable, the tax strategies employed by Renaissance Technologies illustrate the lengths to which market participants go to manage and mitigate risks, including regulatory and tax risks. These dynamic adjustments are far removed from the static assumptions of the BSM model.
-
-In summary, the Jim Simons issue with Renaissance Technologies' tax strategies directly ties into Taleb's critique of the Black-Scholes-Merton model. It exemplifies the real-world complexities and frictions—such as transaction costs, tax implications, and regulatory constraints—that the BSM model fails to consider. Taleb's broader point is that models which ignore these factors provide an incomplete and potentially dangerous view of risk management, as real-world market conditions are far more intricate and variable than theoretical models suggest.
+These films collectively indicate a broader trend in the early 2000s where Japanese culture, history, and aesthetics had a significant presence in Western cinema. This phenomenon can be attributed to Japan's cultural peak in the 90s and its sustained influence through various forms of media, including film, animation, and video games.
